@@ -5,10 +5,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.Arrays;
+
 @Controller
 @RequestMapping("main5")
-public class Controller05 {
 
+public class Controller05 {
     // ?name=son&address=seoul
     @RequestMapping("sub1")
     public void sub1(@RequestParam("name")String p1,
@@ -45,10 +47,50 @@ public class Controller05 {
     // /main5/sub5?name=강인
     // /main5/sub5
         @RequestMapping("sub5")
-    public void sub5(@RequestParam(defaultValue = "게스트2")String name,
+    public void sub5(@RequestParam(defaultValue = "게스트1")String name,
                      @RequestParam(defaultValue = "서울역")String address){
         System.out.println("name="+name);
         System.out.println("address="+address);
+    }
+
+    // /main5/sub6?name=손&age=33&score=3.14&num=55&point=99.1234
+    // /main5/sub6?age=33&score=3.14&num=55&point=99.1234
+    // /main5/sub6?score=3.14&num=55&point=99.1234
+    // /main5/sub6?score=3.14&num=55&point=99.1234&age=3
+    @RequestMapping("sub6")
+    public void sub6(String name,
+                     Integer age,
+                     double score,
+                     Integer num,
+                     Double point) {
+        System.out.println("name="+name);
+        System.out.println("age="+age);
+        System.out.println("score="+score);
+        System.out.println("num="+num);
+        System.out.println("point="+point);
+    }
+    // /main5/sub7
+    // /main5/sub7?email=gmail
+    // /main5/sub7?email=gmail&email=yahoo
+    // /main5/sub7?email=gmail&email=yahoo&email=daum
+    @RequestMapping("sub7")
+    public void method7(String[] email) {
+        System.out.println("email = " + Arrays.toString(email));
+    }
+
+    // /main5/sub9?hobby = 축구&hobby=야구&name=강인&address=서울&point=7.1234&age=55
+    @RequestMapping("sub9")
+public void sub8(
+        String[] hobby,
+        String name,
+        String address,
+        Integer point,
+        double age){
+        System.out.println("hobby="+Arrays.toString(hobby));
+        System.out.println("name="+name);
+        System.out.println("address="+address);
+        System.out.println("point="+point);
+        System.out.println("age="+age);
     }
 }
 
