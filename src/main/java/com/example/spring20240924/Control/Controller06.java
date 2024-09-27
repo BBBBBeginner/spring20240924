@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("main6")
 
-public class Controller6 {
+public class Controller06 {
     @RequestMapping("sub1")
     @ResponseBody
     public String sub1(String search) {
