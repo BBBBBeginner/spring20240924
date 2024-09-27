@@ -10,7 +10,7 @@ import org.springframework.web.context.request.WebRequest;
 @Controller
 @RequestMapping("main7")
 
-public class Controller07 {
+public class Controller7 {
 
     @RequestMapping("sub1")
     public void sub1(WebRequest request) {
