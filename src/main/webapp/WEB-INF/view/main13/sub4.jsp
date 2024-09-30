@@ -4,6 +4,8 @@
 <head>
     <title>Title</title>
 </head>
+
+
 <body>
 
 <%-- var 속성의 이름으로 test 연산 결과가 el 객체(attribute)에 저장됨--%>
