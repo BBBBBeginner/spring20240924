@@ -10,9 +10,10 @@ import java.util.List;
 public class MyBean8 {
     private String userName;
     private Integer age;
+    private Double score;
     private List<String> foodList;
     private LocalDate startDate;
     private LocalDateTime endDateTime;
     private Boolean expired;
-    private Double score;
+
 }
