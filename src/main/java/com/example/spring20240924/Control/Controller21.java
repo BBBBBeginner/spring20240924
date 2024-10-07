@@ -87,10 +87,10 @@ public class Controller21 {
 
     @GetMapping("sub10")
     public String g10(RedirectAttributes rttr) {
-        MyBean8 m = new MyBean8("범근", 22, 3.14);
-//        m.setAge(22);
-//        m.setUserName("범근");
-//        m.setScore(3.14);
+        MyBean8 m = new MyBean8();
+        m.setAge(22);
+        m.setUserName("범근");
+        m.setScore(3.14);
         rttr.addFlashAttribute("data", m);
         return "redirect:/main21/sub11";
     }
