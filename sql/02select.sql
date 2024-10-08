@@ -59,6 +59,7 @@ From Employees;
 SELECT *
 FROM Employees;
 
+
 # Products 테이블의 모든 컬럼과 모든 행 조회
 # Products 테이블의 ProductName, Unit, Price 컬럼 조회
 # Suppliers 테이블의 City, Country, SupplierName 컬럼 조회(열순서유지)
