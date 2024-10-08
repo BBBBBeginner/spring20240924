@@ -130,7 +130,7 @@ public class Controller23 {
     //공급자 테이블 조회해서 국가명 목록 출력하기
     // sub4.jsp 재사용하기
     @GetMapping("sub5")
-    public String sub5(Model model) throws SQLException {
+    public String sub5(Model model, String name) throws SQLException {
 
         String sql = """
                 SELECT DISTINCT Country
@@ -148,7 +148,7 @@ public class Controller23 {
         try (con; stmt; rs) {
             List<String> list = new ArrayList<>();
             while (rs.next()) {
-                String name = rs.getString("Country");
+                name = rs.getString("Country");
                 list.add(name);
             }
             model.addAttribute("countryList", list);
