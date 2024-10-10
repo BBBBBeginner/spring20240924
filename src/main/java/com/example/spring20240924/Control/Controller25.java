@@ -27,10 +27,12 @@ public class Controller25 {
                 FROM Customers
                 WHERE Country = '\{country}'
                 """;
+
         try {
             Connection conn = dataSource.getConnection();
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
+
             while (rs.next()) {
                 String name = rs.getString("CustomerName");
                 System.out.println("name =" + name);
@@ -70,5 +72,4 @@ public class Controller25 {
             e.printStackTrace();
         }
     }
-
 }
