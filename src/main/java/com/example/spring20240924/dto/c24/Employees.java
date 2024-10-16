@@ -4,7 +4,10 @@ import lombok.Data;
 
 @Data
 public class Employees {
-    private String Id;
-    private String FirstName;
-    private String LastName;
+    private String id;
+    private String firstName;
+    private String lastName;
+    private String birthDate;
+    private String photo;
+    private String notes;
 }
