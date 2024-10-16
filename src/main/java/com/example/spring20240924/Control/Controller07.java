@@ -16,7 +16,7 @@ public class Controller07 {
     public void sub1(WebRequest request) {
 
         request.setAttribute("data", "손흥민", RequestAttributes.SCOPE_REQUEST);
-        // /WEB-INF/view/main7/sub1.jsp 로 request forwarding
+        // /WEB-INF/view/main7sub1.jsp 로 request forwarding
     }
 
     @RequestMapping("sub2")
