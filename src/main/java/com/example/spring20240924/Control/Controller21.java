@@ -74,7 +74,7 @@ public class Controller21 {
     // sub8.jsp
     // : 전송버튼 클릭시 post 방식으로 sub9 경로로 요청하는 코드
 
-    // sub9.jsp
+    // sub10.jsp
     // : model에 있는 attribute의 각 property를 출력하는 코드
     @GetMapping("sub8")
     public void g8() {
