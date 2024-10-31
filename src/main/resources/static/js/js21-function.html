@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // () : 함수 실행시 값을 전달 받는 변수(parameter) 목록
+  // function fun1(a,b,c,d,e) {}
+
+  function fun1(v1, v2, v3) {
+    console.log("hello");
+  }
+
+  fun1(3); // v1 = 3 // 3 = argument
+  console.log("hi");
+  fun1(5); // v1 = 5
+
+  fun1(9, 7); // v1 =9, v2 =7, v3 = undifind
+  fun1("hi", "abc", "def");
+  fun1("hi", 3, 3.14);
+
+  //
+
+  function fun2(a, b) {
+    console.log(a + b);
+
+  }
+
+  fun2(5, 3); // 콘솔에 8이 출력되도록 fun2 함수 작성
+  fun2(10, 20); // 콘솔에 30이 출력되도록 fun2 함수 작성
+  fun2("10", "20"); // "1020"
+
+
+  // arrow function 에서 파라미터 목록이 하나면 () 생략 가능
+  function func3(a) {
+    console.log(a);
+  }
+
+  let func4 = function (a) {
+    console.log(a);
+  }
+  let func5 = (a) => {
+    console.log(a);
+  }
+  let func6 = a => {
+    console.log(a);
+  }
+</script>
+</body>
+</html>
