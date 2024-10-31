@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function func1() {
+    //함수 호출 시 실행되는 코드들...
+    console.log("hello");
+    console.log("javascript");
+    console.log("world");
+  }
+
+  func1();
+
+  function func2() {
+    console.log("hi")
+    console.log("함수")
+    return; // 함수 종료
+    console.log("또 다른 코드");
+  }
+
+  func2();
+
+  function func3() {
+    console.log("세번째 함수 코드.")
+    return 3; // 함수 종료, 값을 호출한 곳으로 반환 func3(3)
+  }
+
+  let a = func3(); // 3
+  console.log(a)
+  func3();
+
+  function func4(a) {
+    return a * 2;
+  }
+
+  let c = func4(5);
+  console.log(c)
+  let d = func4(9);
+  console.log(d);
+  console.log(func4(7));
+
+
+  // func5 작성
+  function func5(a) {
+    return a / 2;
+  }
+
+  let e = func5(10);
+  console.log(e); // 5
+  let f = func5(90);
+  console.log(f); // 45
+  console.log(func5(100)); // 50
+
+  // arrow function 에서 {} 내의 코드가 한 줄이면 {} 생략 가능
+  // 한 줄의 코드가 return 이면 return 생략 가능
+  function fun6() {
+    console.log("a");
+  }
+
+  let fun7 = () => {
+    console.log("a");
+  };
+
+  let fun8 = () => console.log("a");
+
+  let fun9 = () => 9;
+
+  //위 func4 와 같은 일을 하는 함수
+  let fun11 = a => a * 2;
+
+  //위 func5와 같은 일을 하는 함수
+  let fun12 = a => a / 2;
+
+  console.log(fun11(10));
+  console.log(fun12(10));
+
+</script>
+</body>
+</html>
