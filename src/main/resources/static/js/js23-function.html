@@ -61,7 +61,15 @@
     return fun6;
   }
 
+  // fun5: 함수의 이름만 가리킵니다. 이때는 함수를 실행하지 않고 참조할 뿐입니다.
+  // fun5(): 함수 이름 뒤에 ()를 붙이면 함수를 실행하고, 그 결과(리턴값)를 반환합니다.
+
+  console.log("---------------")
+
   let h = fun5;
+
+  console.log("----------------")
+
   let i = fun5();
 
   console.log("------------------------------")
@@ -72,7 +80,7 @@
   console.log("------------------------------")
 
   function fun7(a) {
-    console.log("fun7 코드들...");
+    console.log("fun7 코드들..");
     a();
   }
 
@@ -80,18 +88,28 @@
     console.log("fun8 코드들...")
   }
 
+  function fun9() {
+    console.log("fun9 코드들..")
+  }
+
+
   fun7(fun8);
+
   fun7(fun9);
+
   fun7(function fun10() {
     console.log("fun10 코드들");
   });
+
+  console.log("-------------")
+
   fun7(function () {
     console.log("이름 없는 함수 코드들");
   })
 
+  console.log("-------------")
+
   fun7(() => console.log("애로우 펑션 코드들"));
 </script>
-
-
 </body>
 </html>
