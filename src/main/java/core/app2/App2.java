@@ -15,8 +15,13 @@ public class App2 {
         //   @Component 가 붙 은 클래스로 객체(Spring Bean)을 생성함
 
         // Dependency Injection (엮는다(Autowired). 의존성 주입)
+
+        // ApplicationContext: Spring의 IoC 컨테이너로, 모든 빈을 관리
         ApplicationContext context = SpringApplication.run(App2.class, args);
+
+        // Controller1 빈을 가져와서 b1에 할당
         Controller1 b1 = context.getBean(Controller1.class);
+
         System.out.println(System.identityHashCode(b1));
 
         Controller1 b2 = context.getBean(Controller1.class);
