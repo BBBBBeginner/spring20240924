@@ -41,7 +41,6 @@ public class Controller25 {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
     }
 
     // 특정 가격인 상품명 조회
