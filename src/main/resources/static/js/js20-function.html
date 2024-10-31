@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  //함수(function) : 나중에 실행되기 위한 코드 블럭
+
+  // 함수 정의 방법 3가지
+  // 이름 있는 함수
+  // 이름 없는 함수
+  // arrow function : 마찬가지로 이름 없음 , =>(arrow) 사용
+
+  // 함수는 값이다.
+
+
+
+
+  // 1. 이름 있는 함수
+
+  function 함수명(파라미터목록) {
+    // 코드블럭
+  }
+
+  // 함수명 : lowerCamelCase
+
+  // 함수정의
+  function myFunction() {
+    console.log("함수내의 코드들...")
+  }
+
+  // 함수 호출
+  // : 함수명()
+  myFunction(); // 함수명 호출하면 어디서든 몇번이고 실행 가능
+  console.log("hi");
+  myFunction();
+
+  // myFunction2 작성
+
+  myFunc3(); // js함수는 호출할때 존재하지 않아도 호출 가능
+
+  function myFunc3() {
+    console.log("js함수는 호출할때 존재하지 않아도 호출 가능");
+  }
+
+
+  // 2. 이름 없는 함수(변수에 할당 후 실행 가능)
+  function (){
+    console.log("이름없는 함수 코드들... 이름없는 함수는 이름있는 함수와 달리 함수 존재 전에 호출 안됨");
+  }
+
+
+  let myFunc4 = function(){
+    console.log("이름없는 함수 코드들은 변수에 정의를 해줘야함...");
+  }
+  myFunc4();
+
+  let myFun5 = function(){
+    console.log("no name")
+  }
+  myFun5();
+
+
+
+  // 3. arrow function
+  let myFunc7 = () => {
+    console.log("애로우 평션 코드들...")
+  }
+  myFunc7();
+
+
+  let myFunc8 = () =>{
+    console.log("애로우 펑션 myFunc8")
+  }
+  myFunc8();
+
+  // arrow function 정의하기
+  let myFunc8 = () => {
+    console.log("또 다른 arrow function 코드들...");
+  };
+  myFunc8();
+
+</script>
+
+</body>
+</html>
