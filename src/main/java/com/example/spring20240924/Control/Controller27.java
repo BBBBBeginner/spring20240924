@@ -1,4 +1,4 @@
-package com.example.spring20240924.controller;
+package com.example.spring20240924.Control;
 
 import com.example.spring20240924.dto.c26.Customer;
 import com.example.spring20240924.dto.c26.Product;
