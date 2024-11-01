@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--div#box$*2>ul>li*3>lorem1-->
+<div id="box1">
+    <ul>
+        <li>Lorem.</li>
+        <li>Voluptas.</li>
+        <li>Dolorum.</li>
+    </ul>
+</div>
+<div id="box2">
+    <ul>
+        <li>Lorem.</li>
+        <li>Perspiciatis.</li>
+        <li>Enim?</li>
+    </ul>
+    <!--
+        <h2> hello </h2>
+        <ul>
+            <li>hi</li>
+
+            <li>Lorem.</li>
+            <li>Perspiciatis.</li>
+            <li>Enim?</li>
+
+            <li>dom</li>
+        </ul>
+        <p> world </p>
+
+    -->
+
+
+</div>
+
+<script>
+  let a = document.querySelector("ul");
+
+  // append (마지막 자식)
+  // prepend(첫번째 자식)
+  // after(동생)
+  // before(형)
+
+  let b = document.createElement("p");
+  b.innerText = "p 요소"
+  let c = document.createElement("li");
+  c.innerText = "li 요소1"
+  let d = document.createElement("h1");
+  d.innerText = "h1 요소"
+  let e = document.createElement("li");
+  e.innerText = "li 요소2"
+
+  a.append(c);
+  a.prepend(e);
+  a.after(b);
+  a.before(d);
+
+
+  let f = document.querySelector("#box2 > ul")
+  console.log(f)
+
+  let g = document.createElement("h2");
+  g.innerHTML = "hello";
+  let h = document.createElement("p");
+  h.innerHTML = "world";
+  let i = document.createElement("li");
+  i.innerHTML = "hi";
+  let j = document.createElement("li");
+  j.innerHTML = "dom";
+
+  f.before(g);
+  f.after(h);
+  f.prepend(i);
+  f.append(j);
+</script>
+</body>
+</html>
