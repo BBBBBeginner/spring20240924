@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--p*5>lorem1-->
+<p>Lorem.</p>
+<p>Dignissimos?</p>
+<p>Porro?</p>
+<p>Odit!</p>
+<p>Totam!</p>
+
+<input type="text">
+
+<script>
+  // document.querySelector("p:nth-child(1)")
+  //   .addEventListener("click", function () {
+  //     document.querySelector("input").value =
+  //       document.querySelector("p:nth-child(1)").innerHTML;
+  //   });
+  // document.querySelector("p:nth-child(2)")
+  //   .addEventListener("click", function () {
+  //     document.querySelector("input").value =
+  //       document.querySelector("p:nth-child(2)").innerHTML;
+  //   });
+
+  document.querySelectorAll("p")
+    .forEach((elem) => {
+      elem.addEventListener("click", () => {
+        document.querySelector("input").value = elem.innerHTML;
+      })
+    })
+</script>
+
+</body>
+</html>
