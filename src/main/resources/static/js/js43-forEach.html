@@ -26,12 +26,27 @@
   //       document.querySelector("p:nth-child(2)").innerHTML;
   //   });
 
+  // document.querySelector() : HTML에서 선택
+  // innerHTML : <p></p> 내부에 있는 것을 조회.
+
+  //for each 활용
   document.querySelectorAll("p")
     .forEach((elem) => {
       elem.addEventListener("click", () => {
         document.querySelector("input").value = elem.innerHTML;
       })
     })
+
+  // for of 활용
+  const paragraphs = document.querySelectorAll("p"); // 모든 p 요소 선택
+
+  for (let elem of paragraphs) { // for...of 문 사용
+    elem.addEventListener("click", () => {
+      document.querySelector("input").value = elem.innerHTML;
+    });
+  }
+
+
 </script>
 
 </body>
