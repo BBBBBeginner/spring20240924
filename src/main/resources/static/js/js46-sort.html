@@ -6,7 +6,8 @@
 </head>
 <body>
 <!--div>p*5>lorem1-->
-<button>정렬</button>
+<button>오름차순 정렬</button>
+<button>내림차순 정렬</button>
 <div>
     <p>Lorem.</p>
     <p>Necessitatibus.</p>
@@ -37,6 +38,26 @@
     parasArray.forEach(e => {
       e.remove();
       div.append(e);
+    })
+  });
+
+  const btn2 = document.querySelector("button:nth-child(2)");
+  btn2.addEventListener("click", () => {
+    const paras = document.querySelectorAll("p");
+    const parasArray = [];
+    paras.forEach(e => parasArray.push(e));
+    parasArray.sort((e1, e2) => {
+      if (e1.innerHTML > e2.innerHTML) {
+        return -1;
+      } else if (e1.innerHTML < e2.innerHTML) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+    parasArray.forEach(e => {
+      e.remove();
+      document.querySelector("div").append(e);
     })
   });
 </script>
