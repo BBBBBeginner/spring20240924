@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = [3, 1, 4, 1, 5, 9, 2];
+
+  let f1 = a.find(e => e % 3 === 0);
+  console.log(f1); // 3  해당되는 첫번째 것만
+
+  let f2 = a.filter(e => e % 3 === 0);
+  console.log(f2); // 배열 [3,9] 해당되는거 다
+
+  // find 와 filter는 sort와 달리 원본을 변화시키지 않고 유지한다. 필요한것만 찾아줌.
+
+  let b = ["hankang", "faker", "rose", "son", "apt"];
+
+  // 코드 작성
+
+  // 세글자인 아이템만 출력
+  // 4글자 이상인 아이템만 출력
+  // 홀수 글자 수인 아이템만 출력
+  let f3 = b.filter(e => e.length % 3 === 0);
+  console.log(f3)
+
+
+</script>
+</body>
+</html>
