@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // spread(...)
+  const a = [3, 1, 4];
+  const b = [...a];
+  const c = [...a, 1];
+
+  console.log(c);
+  const d = [5, ...a];
+  console.log(d);
+  const e = [9, ...a, 1, 9];
+  console.log(e);
+
+  console.log(e);
+
+  const f = ["son", "rose", "apt"];
+  const g = [...a, ...f];
+  console.log(g);
+  const h = [...f, ...a];
+  console.log(h);
+  const i = ["bruno", ...f, ...a, 1, 5];
+  console.log(i)
+
+  // 연습
+  const j = [9, 10, 11];
+  const k = ["d", "e", "f"];
+
+  // 코드 작성
+  const l = [...j, ...k];
+  console.log(l);
+</script>
+
+
+</body>
+</html>
