@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  function fun1({address, email = "yahoo", city = "seoul"}) {
+    console.log(address, email, city)
+  }
+
+  const a = {address: "korea", email: "naver"}
+  fun1(a);
+  const b = {address: "us", email: "gmail"}
+  fun1(b);
+  const c = {address: "france"};
+  fun1(c);
+
+</script>
+</body>
+</html>

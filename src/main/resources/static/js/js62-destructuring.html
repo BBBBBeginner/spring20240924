@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // Destructuring assignment
+  const a = {name: "son", city: "seoul"};
+  const b = a.name;
+  const c = a.city;
+  console.log(b, c);
+
+  const {x: name, y: city} = a;
+  console.log(x, y);
+
+  //연습
+  const d = {age: 44, song: "apt"};
+  // 코드 작성
+  const {age: s, song: t} = d;
+  console.log(s, t); //44, apt
+
+  //
+  const {age, song} = d;
+  // const age = d.age;
+  // const song = d.song;
+  console.log(age, song);
+
+
+  const e = {address: "london", email: "gmail"};
+  const {address, email, info} = e;
+  console.log(address, email, info);
+
+
+  // 없으면 기본값 할당
+  const f = {desc: "hi", greeting: "hello"};
+  const {desc, greeting = "morning", weight = 99} = f;
+  console.log(desc, greeting, weight);
+
+
+  //연습
+  const g = {height: 200, depth: 7, nick: "son"};
+
+  // 코드 작성
+  const {height, depth, nick, password = 10} = g;
+  console.log(height, depth, nick, password); // 200, 7, son
+</script>
+
+
+</body>
+</html>
