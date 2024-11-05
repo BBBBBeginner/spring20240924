@@ -24,12 +24,14 @@
     "Animi asperiores consectetur corporis harum in ipsum laborum quibusdam similique?",
     "Aliquam commodi dolores doloribus esse ipsam iste nesciunt veritatis voluptate."]
 
+  //box에 띄우기
   const box = document.querySelector("#box");
   arr.forEach(str => {
     const li = document.createElement("li");
     li.innerText = str;
     box.append(li);
   })
+
 
   // document.querySelector("#btn1").addEventListener("click", () => {
   document.querySelector("#input1").addEventListener("keyup", () => {
