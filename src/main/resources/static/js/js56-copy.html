@@ -75,6 +75,24 @@
   console.log(i);
 
   // 연습 :
+  const j = ["son", "han", "rose"];
+  // 코드 작성( j를 k로 얕은 복사)
+  const k = [...j];
+
+  k[2] = "apt";
+  console.log(j); // son, han, rose
+  console.log(k); // son, han, apt
+
+  const l = [["son", "london"], ["rose", "apt"]];
+  // 코드 작성 (l 을 m으로 깊은 복사)
+  const m = [];
+  for (const item of l) {
+    m.push([...item]);
+  }
+  m[1][0] = "bruno";
+
+  console.log(l);//["son", "london"], ["rose", "apt"]]
+  console.log(m);//["son", "london"], ["bruno", "apt"]]
 
 
 </script>
